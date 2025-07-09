@@ -1,0 +1,92 @@
+.complaint-page {
+  background: linear-gradient(to right, #e0ecf8, #f8f9fa);
+  padding: 50px 20px;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-background span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(13, 110, 253, 0.15);
+  border-radius: 50%;
+  animation: float 10s linear infinite;
+}
+
+.animated-background span:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+.animated-background span:nth-child(2) {
+  top: 50%;
+  left: 80%;
+  animation-delay: 2s;
+}
+.animated-background span:nth-child(3) {
+  top: 70%;
+  left: 30%;
+  animation-delay: 4s;
+}
+.animated-background span:nth-child(4) {
+  top: 30%;
+  left: 60%;
+  animation-delay: 6s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-40px) scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+}
+
+.complaint-form-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  z-index: 1;
+}
+
+input,
+textarea {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  box-shadow: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.3);
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}
+
+input.form-control,
+textarea.form-control,
+select.form-control {
+  background-color: white !important;
+  color: black !important;
+}

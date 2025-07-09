@@ -1,0 +1,60 @@
+/* SignUp.css */
+
+/* Navbar background and text */
+.navbar {
+  background-color: #f8f9fa !important; /* light grey */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #000 !important; /* black text */
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #007bff !important; /* Bootstrap primary color on hover */
+}
+
+/* Gradient background section */
+.gradient-custom {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Card styling */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Form input styling */
+.form-control {
+  background-color: #2e2e2e;
+  color: white;
+  border: 1px solid #555;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+/* Dropdown button */
+#dropdown-basic {
+  width: 100%;
+  text-align: left;
+  background-color: #6c757d;
+  border: none;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #000;
+  border: 1px solid white;
+}
